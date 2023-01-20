@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --bg-color: #111;
+  --text-color: #fff;
+  --lg-padding: 2rem;
+  --sm-padding: 1rem;
+  --border-radius: 0.5rem;
+  --max-width: 1200px;
+  --max-width-container: 1000px; 
+}
+
+/*  Default resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
