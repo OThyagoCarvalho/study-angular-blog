@@ -1,16 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-small-post',
   templateUrl: './small-post.component.html',
   styleUrls: ['./small-post.component.css'],
 })
-export class SmallPostComponent {
+export class SmallPostComponent implements OnInit {
+  @Input()
+  postCover: string = '';
+  @Input()
+  postTitle: string = '';
+
   constructor() {}
-  
+  ngOnInit(): void {
+    this.postTitle = this.normalizeTitle(this.hideTitle(this.postTitle));
+  }
+
   //normalize title
   normalizeTitle(title: string): string {
-    return title.replace(/ /g, '-').toLowerCase();
+    return title.replace(/ /g, ' ').toLowerCase();
   }
 
   //hide titles bigger than 50 characters
