@@ -7,6 +7,7 @@ import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { BlogTitleComponent } from './components/blog-title/blog-title.component';
 import { BigPostComponent } from './components/big-post/big-post.component';
 import { SmallPostComponent } from './components/small-post/small-post.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { SmallPostComponent } from './components/small-post/small-post.component
     BlogTitleComponent,
     BigPostComponent,
     SmallPostComponent,
+    HomeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
