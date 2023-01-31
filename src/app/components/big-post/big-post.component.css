@@ -1,6 +1,8 @@
 
 .bigpost__image img {
-  width: 100%;
+  width: 100vw;
+  flex: 1;
+  max-width: 100%;
   height: 100%;
   object-fit: fill;
   filter: saturate(0);
