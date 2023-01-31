@@ -2,11 +2,14 @@
 :root {
   --bg-color: #111;
   --text-color: #fff;
+  --text-faded: #aaa;
+  --text-highlight: #f00;
   --lg-padding: 2rem;
   --sm-padding: 1rem;
   --border-radius: 0.5rem;
   --max-width: 1200px;
-  --max-width-container: 1000px; 
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 /*  Default resets */
@@ -16,5 +19,8 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  color: inherit;
 }
+
+/*  Global styles */
