@@ -1,0 +1,19 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.navbar__container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; 
+  height: 100%;
+}
+
+.navbar__container ul li {
+  list-style: none;
+  margin: 0 2rem;
+}
