@@ -10,6 +10,8 @@ export class SmallPostComponent implements OnInit {
   postCover: string = '';
   @Input()
   postTitle: string = '';
+  @Input()
+  Id: string = '';
 
   constructor() {}
   ngOnInit(): void {
