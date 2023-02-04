@@ -3,7 +3,7 @@
     <img src="{{postCover}}" alt="image" />
   </div>
   <div class="bigpost__title">
-    <a href="#">
+    <a [routerLink]="['content', Id]" class="content__title--link">
       <h2>{{postTitle}}</h2>
     </a>
   </div>

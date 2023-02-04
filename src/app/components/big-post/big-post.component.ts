@@ -12,8 +12,9 @@ export class BigPostComponent implements OnInit {
   postTitle: string = '';
   @Input()
   postDescription: string = '';
+  @Input()
+  Id: string = '';
 
   constructor() {}
   ngOnInit(): void {}
-
 }
