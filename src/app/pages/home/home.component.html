@@ -1,19 +1,13 @@
 <main class="main__container-max-content">
-  <app-menu-bar></app-menu-bar>
   <app-blog-title></app-blog-title>
   <section class="posts__container">
     <div class="bigpost__container">
-      <app-big-post></app-big-post>
+      <app-big-post [Id]="bigpost.id" [postCover]="bigpost.cover_url" [postTitle]="bigpost.post_title"
+        [postDescription]="bigpost.post_description"></app-big-post>
     </div>
     <div class="smallposts__container">
-      <div class="smallpost__container">
-        <app-small-post></app-small-post>
-      </div>
-      <div class="smallpost__container">
-        <app-small-post></app-small-post>
-      </div>
-      <div class="smallpost__container">
-        <app-small-post></app-small-post>
+      <div *ngFor="let post of posts; index as i" class="smallpost__container">
+        <app-small-post [Id]="post.id" [postTitle]="post.post_title" [postCover]="post.cover_url"></app-small-post>
       </div>
     </div>
   </section>
