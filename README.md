@@ -1,4 +1,9 @@
-# StudyAngularBlog
+# Studying Angular
+
+This is a simple angular blog to understand the basic concepts involved in creating a web application with angular. It displays mocked data dynamically using lifecycle hooks and property binding. It also uses a basic dynamic route to navigate from home page to post content page.
+
+
+## Default Angular CLI text bellow:
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
 
