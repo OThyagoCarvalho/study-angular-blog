@@ -8,6 +8,7 @@ import { BlogTitleComponent } from './components/blog-title/blog-title.component
 import { BigPostComponent } from './components/big-post/big-post.component';
 import { SmallPostComponent } from './components/small-post/small-post.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ContentComponent } from './pages/content/content.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HomeComponent } from './pages/home/home.component';
     BigPostComponent,
     SmallPostComponent,
     HomeComponent,
+    ContentComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
